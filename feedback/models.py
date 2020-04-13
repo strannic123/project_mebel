@@ -6,6 +6,7 @@ class FeedBackModel(models.Model):
 
     class Meta:
         verbose_name = 'Обратная связь'
+        verbose_name_plural = 'Обратная связь'
 
     mail = models.EmailField('Электронная почта', max_length=150)
     message = models.TextField('Сообщение')

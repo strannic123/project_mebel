@@ -29,6 +29,7 @@ class CategoryModel(models.Model):
 class PostModel(models.Model):
     class Meta:
         verbose_name = 'Пост'
+        verbose_name_plural = 'Посты'
 
     category = models.ForeignKey(CategoryModel, verbose_name='Категории', on_delete=models.CASCADE)
     name = models.CharField('Название', max_length=100)

@@ -4,6 +4,10 @@ from solo.models import SingletonModel
 
 class ContactsModel(SingletonModel):
     """Контакты"""
+    class Meta:
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакты'
+
     phone = models.CharField('тел', max_length=20)
     phone_2 = models.CharField('тел_2', max_length=20)
     address = models.CharField('адрес', max_length=20)
